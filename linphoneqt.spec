@@ -19,6 +19,7 @@ BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(Qt5LinguistTools)
 BuildRequires:	cmake(Qt5Concurrent)
 BuildRequires:	cmake(Qt5Test)
+BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	bctoolbox-static-devel
 Requires:	mediastreamer >= 1:2.16.1
 Requires:	qt5-qtdeclarative
