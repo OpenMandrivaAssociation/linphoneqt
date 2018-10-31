@@ -1,6 +1,6 @@
 Name:		linphoneqt
 Version:	4.1.1
-Release:	1
+Release:	2
 Summary:	Voice over IP Application
 License:	GPLv2+
 Group:		Communications
