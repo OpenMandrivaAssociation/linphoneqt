@@ -21,6 +21,7 @@ BuildRequires:	cmake(Qt5Concurrent)
 BuildRequires:	cmake(Qt5Test)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	bctoolbox-static-devel
+BuildRequires:	pkgconfig(bctoolbox)
 Requires:	mediastreamer >= 1:2.16.1
 Requires:	qt5-qtdeclarative
 Requires:	qt5-qtquickcontrols2
@@ -40,10 +41,10 @@ sed -i -e 's,LINPHONE_QT_GIT_VERSION,"%{version}",' src/app/AppController.cpp
 
 %build
 %cmake
-%make
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
 
 %files
 %doc README.md CHANGELOG.md LICENSE
@@ -52,4 +53,3 @@ sed -i -e 's,LINPHONE_QT_GIT_VERSION,"%{version}",' src/app/AppController.cpp
 %{_datadir}/applications/linphone.desktop
 %{_iconsdir}/hicolor/scalable/apps/linphone.svg
 %{_datadir}/linphone/
-
