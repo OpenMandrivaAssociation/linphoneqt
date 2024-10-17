@@ -4,7 +4,7 @@ Release:	2
 Summary:	Voice over IP Application
 License:	GPLv2+
 Group:		Communications
-URL:		http://www.linphone.org
+URL:		https://www.linphone.org
 Source0:	https://linphone.org/releases/sources/linphoneqt/linphoneqt-%{version}.tar.gz
 Source1:	https://linphone.org/releases/sources/linphoneqt/linphoneqt-%{version}.tar.gz.md5
 BuildRequires:	cmake
